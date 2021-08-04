@@ -7,4 +7,6 @@ Website development for show the climates of all cities
   <img align="center" alt="Adryan-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 </div>
 
+<br>
+
 <img src='img/bg.png'>
