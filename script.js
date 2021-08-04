@@ -1,4 +1,4 @@
-let searchElement = document.querySelector("#searchInput").value;
+let searchElement = document.querySelector("#searchInput");
 let btn = document.querySelector("form.busca button");
 let resultado = document.querySelector(".resultado");
 let titulo = document.querySelector(".titulo");
@@ -15,7 +15,7 @@ document.querySelector(".busca").addEventListener("submit", async (event) => {
     showWarning("Carregando...");
   }
 
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(searchElement)}&appid=bfeb5fc772efa63c919fd3398b87e9a7&units=metric&lang=pt_br`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(searchElement.value)}&appid=bfeb5fc772efa63c919fd3398b87e9a7&units=metric&lang=pt_br`;
 
   let results = await fetch(url);
   let json = await results.json();
